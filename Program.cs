@@ -18,7 +18,13 @@ namespace CalculatorApp
             Console.WriteLine("Enter a second number and I will add it to the first");
             num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Result: " + (num1 + num2));
+            var result = Sum(num1, num2);
+            Console.WriteLine("Result: " + result);
+        }
+
+        static int Sum(int num1, int num2)
+        {
+            return num1 + num2;
         }
     }
 }
